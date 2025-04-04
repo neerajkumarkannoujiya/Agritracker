@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'agritracker.urls'
+ROOT_URLCONF = 'agritracker_main.urls'
 
 TEMPLATES = [
     {
