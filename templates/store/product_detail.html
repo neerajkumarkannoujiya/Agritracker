@@ -1,0 +1,92 @@
+{% load static %}
+{% include 'header1.html' %}
+
+
+<header class="section-header">
+
+
+<section class="header-main border-bottom">
+	<div class="container">
+<div class="row align-items-center">
+	<div class="col-lg-2 col-md-3 col-6">
+		<a href="./" class="brand-wrap">
+			<img class="logo" src="{% static 'images/agritracker_logo.jpeg' %}">
+		</a> <!-- brand-wrap.// -->
+	</div>
+	
+	<a href="./store.html" class="btn btn-outline-success">Store</a>
+	<div class="col-lg  col-md-6 col-sm-12 col">
+		<form action="#" class="search">
+			<div class="input-group w-100">
+			    <input type="text" class="form-control" style="width:60%;" placeholder="Search">
+			    
+			    <div class="input-group-append">
+			      <button class="btn btn-success" type="submit">
+			        <i class="fa fa-search"></i>
+			      </button>
+			    </div>
+		    </div>
+		</form> <!-- search-wrap .end// -->
+	</div> <!-- col.// -->
+	
+</div> <!-- row.// -->
+	</div> <!-- container.// -->
+</section> <!-- header-main .// -->
+
+
+</header> <!-- section-header.// -->
+
+
+
+<section class="section-content padding-y bg">
+<div class="container">
+
+<!-- ============================ COMPONENT 1 ================================= -->
+<div class="card">
+	<div class="row no-gutters">
+		<aside class="col-md-6">
+<article class="gallery-wrap"> 
+	<div class="img-big-wrap">
+	   <a href="#"><img src="{{ single_product.images.url}}"></a>
+	</div> <!-- img-big-wrap.// -->
+	
+</article> <!-- gallery-wrap .end// -->
+		</aside>
+		<main class="col-md-6 border-left">
+<article class="content-body">
+
+<h2 class="title">{{single_product.product_name}}</h2>
+
+<div class="mb-3"> 
+	<var class="price h4">Rs {{single_product.price}}</var> 
+</div> 
+
+<p>{{single_product.description}}</p>
+
+
+<hr>
+
+	<div class="row">
+		<div class="item-option-select">
+			<h6>Amount of {{single_product.product_name}} : {{single_product.stock}} kg</h6>
+	
+		</div>
+	</div> <!-- row.// -->
+	<hr>
+	<a href="./product-detail.html" class="btn  btn-success"> <span class="text">Call</span>   </a>
+    <a href="./product-detail.html" class="btn  btn-success"> <span class="text">Messages</span>   </a>
+</article> <!-- product-info-aside .// -->
+		</main> <!-- col.// -->
+	</div> <!-- row.// -->
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT 1 END .// ================================= -->
+
+<br>
+
+
+
+
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+</body>
+</html>

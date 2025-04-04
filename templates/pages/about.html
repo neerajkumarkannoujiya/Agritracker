@@ -1,0 +1,207 @@
+{% load static %}
+
+{% include 'header.html' %}
+
+
+<div class="site-section">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+          <a data-fancybox href="https://youtu.be/g8tHedBgrRA?si=BlT7Y2UcVmK7EPDz" class="video-1">
+            <span class="play"><span class=" icon-play"></span></span>
+            <img src="{% static 'images/farmer_phone.jpeg' %}" alt="Image" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-lg-5 order-lg-1">
+          <h2 class="text-primary mb-4">Plants Make Life Better</h2>
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus placeat, atque qui voluptatem velit explicabo vitae repellendus architecto provident nisi ullam minus asperiores commodi! Tenetur, repellat aliquam nihil illo.</p>
+          <ul class="list-unstyled ul-check primary">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Velit explicabo vitae repellendu</li>
+            <li>Repellat aliquam nihil illo</li>
+          </ul>
+          <p><a href="contact.html" class="btn btn-primary">Get in touch</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 mb-5 text-center">
+          <h2 class="section-title text-black mb-4">Meet The Team</h2>
+        </div>
+      </div>
+
+      <div class="row d-flex align-items-center justify-content-center vh-100">
+        <div class="col-lg-3 col-md-6 mb-lg-0">
+          <div class="person">
+            <figure>
+              <img src="{% static 'images/neeraj.jpeg' %}" alt="Image" class="img-fluid">
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </div>
+            </figure>
+            <div class="person-contents">
+              <h5>Neeraj Kumar Kannoujiya</h5>
+              <span class="position">Co-founder</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-lg-0">
+          <div class="person">
+            <figure>
+              <img src="{% static 'images/divyansh.jpeg' %}" alt="Image" class="img-fluid">
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </div>
+            </figure>
+            <div class="person-contents">
+              <h5>Aman Sahu</h5>
+              <span class="position">Co-founder</span>
+            </div>
+          </div>
+        </div>
+
+        {% comment %} <div class="col-lg-3 col-md-6 mb-lg-0">
+          <div class="person">
+            <figure>
+              <img src="{% static 'images/dhiru.jpeg' %}" alt="Image" class="img-fluid">
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-linkedin"></span></a>
+              </div>
+            </figure>
+            <div class="person-contents">
+              <h5>Dhirendra Kumar</h5>
+              <span class="position">Co-founder</span>
+            </div>
+          </div>
+        </div> {% endcomment %}
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section services-1-wrap">
+    <div class="container">
+      <div class="row mb-5 justify-content-center text-center">
+        <div class="col-lg-7">
+          <h3 class="section-subtitle">Services</h3>
+          <h2 class="section-title mb-4 text-black">Providing Fresh Produce Every Single Day</h2>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">01</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-1.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Planting</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">02</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-2.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Mulching</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">03</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-3.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Plowing</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">04</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-4.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Mowing</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">05</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-5.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Seeding</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">06</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-6.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Fresh Vegetables</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">07</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-7.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Watering</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="service-1">
+            <span class="number">08</span>
+            <div class="service-1-icon">
+              <img src="{% static 'images/icon-8.png' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="service-1-content">
+              <h3 class="service-heading">Vegetable selling</h3>
+              <p>Gravida sodales condimentum pellen tesq accumsan orci quam sagittis sapie</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+      {% include 'footer.html' %}
