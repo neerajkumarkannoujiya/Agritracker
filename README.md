@@ -44,7 +44,7 @@ This repository hosts the source code and configuration for the **AgriTracker** 
   - Crop cycle & season tracking
   - Resource input logging (e.g., water, fertilizers)
   - Auto-generated reports (PDF/Excel)
-- ![Dashboard Screenshot](UseCase%20Diagrams/Blog%20Use%20Case.jpeg)  
+- ![Dashboard Screenshot](UseCase%20Diagrams/IMG-20250415-WA0009.jpg)  
 
 - 🛒 **Marketplace**
   - Farmers can list products (type, quantity, price)
