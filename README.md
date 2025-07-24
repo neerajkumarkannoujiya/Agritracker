@@ -54,6 +54,7 @@ This repository hosts the source code and configuration for the **AgriTracker** 
   - Publish experiences and farming techniques
   - Share profit/loss case studies
   - Recommend pesticides and insecticides
+    ![Dashboard Screenshot](dashboard.jpeg)  
 
 ### 🚫 Out of Scope (Future Phases)
 - Online payment integration  
