@@ -13,7 +13,4 @@ def blogs(request):
 def contact(request):
     return render(request, 'pages/contact.html')
 
-def contact1(request):
-    return render(request, 'pages/contact1.html')
-
 

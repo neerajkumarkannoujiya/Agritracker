@@ -1,5 +1,7 @@
 from django.shortcuts import render,get_object_or_404
 from .models import Product
+from django.shortcuts import render
+from django.db.models import Q
 from category.models import Category
 # Create your views here.
 def store(request,category_slug=None):
@@ -29,3 +31,23 @@ def product_detail(request,category_slug,product_slug):
         'single_product':single_product,
     }
     return render(request,'store/product_detail.html',context)
+
+
+# Search View for Agritracker
+def store_search(request):
+    products = Product.objects.all()  # Default query to get all products
+    product_count = products.count()
+    
+    # Check if there is a 'keyword' in the GET request
+    keyword = request.GET.get('keyword')
+    if keyword:
+        products = products.filter(
+            Q(product_name__icontains=keyword) | Q(description__icontains=keyword)
+        )
+        product_count = products.count()
+    
+    context = {
+        'products': products,
+        'product_count': product_count,
+    }
+    return render(request, 'store/store.html', context)
